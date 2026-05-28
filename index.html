@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>whatfelixdoes</title>
+<meta name="description" content="mri technologist, writer, and builder in queens, ny.">
+<style>
+  *{margin:0;padding:0;box-sizing:border-box}
+  html,body{background:#0b0b0b;color:#d4d4d4;font-family:ui-monospace,"SF Mono",Menlo,Monaco,"Cascadia Code","Roboto Mono",Consolas,monospace;min-height:100vh}
+  body{display:flex;flex-direction:column;align-items:center;justify-content:center;padding:48px 24px 32px;min-height:100vh}
+  main{width:100%;max-width:340px;flex:1;display:flex;flex-direction:column;justify-content:center}
+  .lines{font-size:15px;line-height:2.4}
+  .lines p{opacity:0;animation:fade .6s ease-out forwards}
+  .lines p:nth-child(1){animation-delay:.2s}
+  .lines p:nth-child(2){animation-delay:.4s}
+  .lines p:nth-child(3){animation-delay:.6s}
+  .lines p:nth-child(4){animation-delay:.8s}
+  .lines p:nth-child(5){animation-delay:1.0s}
+  .cursor{display:inline-block;width:7px;height:14px;background:#8ec07c;margin-left:4px;vertical-align:text-bottom;animation:blink 1s steps(2,start) infinite}
+  footer{margin-top:48px;display:flex;gap:10px;align-items:center;justify-content:center;opacity:0;animation:fade .6s ease-out 1.5s forwards}
+  footer a{color:#6b6b6b;font-size:12px;text-decoration:none;border-bottom:1px solid transparent;padding-bottom:1px;transition:color .15s ease,border-color .15s ease}
+  footer a:hover,footer a:focus-visible{color:#8ec07c;border-bottom-color:#8ec07c;outline:none}
+  .sep{color:#2c2c2c;font-size:12px}
+  @keyframes fade{to{opacity:1}}
+  @keyframes blink{50%{opacity:0}}
+  @media (prefers-reduced-motion: reduce){
+    .lines p,footer{animation:none;opacity:1}
+    .cursor{animation:none}
+  }
+</style>
+</head>
+<body>
+<main>
+  <div class="lines">
+    <p>scans brains.</p>
+    <p>writes about nyc.</p>
+    <p>builds small internet things.</p>
+    <p>runs his own servers.</p>
+    <p>lives in queens, ny.<span class="cursor"></span></p>
+  </div>
+</main>
+<footer>
+  <a href="mailto:admin@whatfelixdoes.com">say hello</a>
+  <span class="sep">·</span>
+  <a href="https://github.com/frod25" rel="noopener">github</a>
+</footer>
+</body>
+</html>
